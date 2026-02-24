@@ -93,11 +93,7 @@ export const FocusTimer = ({ onComplete }: FocusTimerProps) => {
         >
           {formatTime(timeLeft)}
         </div>
-        {!isActive && !isEditing && (
-          <div className="absolute left-1/2 -translate-x-1/2 -bottom-4 text-[10px] font-mono opacity-40 whitespace-nowrap animate-pulse">
-            Click time to adjust duration
-          </div>
-        )}
+        {!isActive && !isEditing}
       </div>
 
       {isEditing && !isActive && (
