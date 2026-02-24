@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Sakura Bloom - Ritual & Focus Garden",
+  "version": "1.0.0",
+  "description": "A mindful ritual tracker and focus timer that grows with you.",
+  "action": {
+    "default_popup": "index.html?mode=popup",
+    "default_title": "Sakura Bloom"
+  },
+  "permissions": ["storage", "notifications", "alarms"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
